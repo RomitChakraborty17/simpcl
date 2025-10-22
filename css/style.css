@@ -1,0 +1,10 @@
+:root{--bg:#f3f4f6;--panel:#ffffff;--accent:#4f46e5;--btn:#e5e7eb}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}
+.calculator{width:320px;background:var(--panel);border-radius:12px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+#display{width:100%;height:56px;font-size:28px;text-align:right;padding:8px 12px;border-radius:8px;border:1px solid #e6e7ea;margin-bottom:12px}
+.buttons{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:8px}
+button{height:56px;border-radius:8px;border:0;background:var(--btn);font-size:18px}
+button[data-action="operator"]{background:#fde68a}
+button[data-action="equals"]{background:var(--accent);color:#fff}
+button.wide{grid-column:span 2}

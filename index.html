@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator (Web)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <input type="text" id="display" readonly value="0" />
+    <div class="buttons">
+      <button data-action="clear">C</button>
+      <button data-action="negate">±</button>
+      <button data-action="percent">%</button>
+      <button data-action="operator">/</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button data-action="operator">*</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button data-action="operator">-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button data-action="operator">+</button>
+
+      <button class="wide">0</button>
+      <button data-action="decimal">.</button>
+      <button data-action="equals">=</button>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
